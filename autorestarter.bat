@@ -9,7 +9,7 @@ echo {        https://twitter.com/notany1ne             }
 echo {        https://github.com/notany1ne              }
 echo.
 set /p enetname="[!] enter your exe name : "
-echo attempting to start %enet% >> logs.txt
+echo attempting to start %enetname% >> logs.txt
 goto wew
 
 :wew
@@ -18,7 +18,7 @@ set mytime=%time%
 color 6
 echo [$] your server is running!
 echo %mydate%:%mytime% your server is running >> autorestarter.txt
-start /w %enet%
+start /w %enetname%
 color 5
 echo [!] your server crashed!
 echo %mydate%:%mytime% crashed >> autorestarter.txt
